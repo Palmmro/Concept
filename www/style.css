@@ -1,4 +1,9 @@
 #button1{
+    /*padding: 60px 45px;*/
+    position: relative;
+    width: 33%;
+    height: 0;
+    padding-bottom: 20%;
     color: deepskyblue;
     background: black;
     background-image: url("resources/dice.png");
