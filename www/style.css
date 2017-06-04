@@ -1,10 +1,14 @@
 #button1{
     /*padding: 60px 45px;*/
     position: relative;
-    width: 33%;
+    width: 50%;
     height: 0;
     padding-bottom: 20%;
     color: deepskyblue;
     background: black;
     background-image: url("resources/dice.png");
+}
+
+p.textField {
+    text-align: center;
 }
