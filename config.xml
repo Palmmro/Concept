@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget>
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>PhoneGap Example</name>
+
+    <description>
+        An example for phonegap build docs.
+    </description>
+
+    <author>
+        Me
+    </author>
+
+</widget>
