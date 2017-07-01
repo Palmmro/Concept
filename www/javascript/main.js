@@ -23,6 +23,8 @@ var movies = ["Nyckeln till frihet (1994)",
     "Forrest Gump (1994)",
     "Inception (2010)"];
 
+console.log(movies[4]);
+
 function getRandomConcepts(arr) {
     var len = arr.length;
     var rand1 = Math.round(Math.random()*len-0.5);
