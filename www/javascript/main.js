@@ -42,8 +42,9 @@ function getRandomConcepts(arr) {
 function onClickButton() {
 
     var moviesarr = getRandomConcepts(movies);
-    textField1.innerHTML = moviesarr[0];
-    textField2.innerHTML = moviesarr[1];
-    textField3.innerHTML = moviesarr[2];
+    textField1.innerHTML = "<p>"+moviesarr[0]+"</p>";
+    textField2.innerHTML = "<p>"+moviesarr[1]+"</p>";
+    textField3.innerHTML = "<p>"+moviesarr[2]+"</p>";
+
 
 }

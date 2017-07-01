@@ -1,14 +1,48 @@
-#button1{
-    /*padding: 60px 45px;*/
-    position: relative;
-    width: 50%;
-    height: 0;
-    padding-bottom: 20%;
-    color: deepskyblue;
-    background: black;
-    background-image: url("resources/dice.png");
+html {
+    height: 100%;
+    overflow-y: hidden;
+}
+body {
+    min-height: 100%;
 }
 
-p.textField {
+#button1{
     text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 12.5%;
+    width: 75%;
+    height: 20vh;
+    color: deepskyblue;
+    background: black;
+    font-size: 300%;
+}
+
+.textField{
+    display: table;
+    height:12vh;
+    width: 100%;
+    border: 3px solid deepskyblue;
+    color: black;
+    text-align: center;
+}
+
+.textField p {
+    display: table-cell;
+    margin: 0;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.textFields{
+    margin: auto;
+    width: 75%;
+    left: 12.5%;
+    text-align: center;
+    position: absolute;
+    top:10%;
+}
+
+.center{
+    margin: auto;
 }
