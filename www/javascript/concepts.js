@@ -37,11 +37,32 @@ var songs = ["Space Oddity",
     "Redemption Song",
     "Life on Mars?"];
 
+var actors = ["Jack Nicholson",
+    "Tom Hanks",
+    "Robin Williams",
+    "Morgan Freeman",
+    "Clint Eastwood",
+    "Leonardo DiCaprio",
+    "Ian McKellen",
+    "Johnny Depp",
+    "Tom Cruise",
+    "Harrison Ford",
+    "Jennifer Lawrence",
+    "Scarlett Johansson",
+    "Emma Stone",
+    "Julia Roberts",
+    "Meryl Streep",
+    "Emma Thompson",
+    "Ingrid Bergman",
+    "Emma Watson",
+    "Cameron Diaz"];
+
 var allConcepts = [];
 fillAllConcepts();
 
 function fillAllConcepts(){
     allConcepts.push.apply(allConcepts,movies);
     allConcepts.push.apply(allConcepts,songs);
+    allConcepts.push.apply(allConcepts,actors);
 
 }
