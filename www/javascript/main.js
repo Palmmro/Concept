@@ -6,6 +6,8 @@ var textField1 = document.getElementById("textField1");
 var textField2 = document.getElementById("textField2");
 var textField3 = document.getElementById("textField3");
 
+var usedConcepts = [];
+
 /**
  * Returns three random elements from the given array arr
  * @param arr
@@ -34,10 +36,30 @@ function getRandomConcepts(arr) {
  * Updates textfields with concepts
  */
 function onClickButton() {
-    var conceptArr = getRandomConcepts(allConcepts);
+
+
+    ensureEnoughConcepts();   //if there are not enough new concepts the first half of the used will be removed
+    var newConcepts = getDifference(allConcepts,usedConcepts);
+    var conceptArr = getRandomConcepts(newConcepts);
+    usedConcepts.push.apply(usedConcepts,conceptArr);
+
     textField1.innerHTML = "<p>"+conceptArr[0]+"</p>";
     textField2.innerHTML = "<p>"+conceptArr[1]+"</p>";
     textField3.innerHTML = "<p>"+conceptArr[2]+"</p>";
+}
+
+function ensureEnoughConcepts() {
+    if(allConcepts.length - usedConcepts.length < 3){
+        for(i = 0; i < usedConcepts.length/2; i++){
+            usedConcepts.shift();
+        }
+    }
+}
+
+function getDifference(original,toBeRemoved){
+    return original.filter(function(item) {
+        return toBeRemoved.indexOf(item) === -1;
+    });
 }
 
 
