@@ -23,6 +23,36 @@ var movies = ["Nyckeln till frihet (1994)",
     "Forrest Gump (1994)",
     "Inception (2010)"];
 
+var songs = ["Space Oddity",
+    "What a wonderful world",
+    "Your Song",
+    "I Still haven't found what I'm looking for",
+    "Smells like teen spirit",
+    "Single Ladies",
+    "All you need is love",
+    "Rolling in the deep",
+    "Anarchy in the UK",
+    "Hotel California",
+    "Wish you were here",
+    "Blowin' in the wind",
+    "I will Survive",
+    "Stairway to heaven",
+    "Wonderwall",
+    "Dancing Queen",
+    "Symphaty for the Devil",
+    "Somewhere over the rainbow",
+    "Redemption Song",
+    "Life on Mars?"];
+
+var allConcepts = [];
+fillAllConcepts();
+
+function fillAllConcepts(){
+    allConcepts.push.apply(allConcepts,movies);
+    allConcepts.push.apply(allConcepts,songs);
+
+}
+
 console.log(movies[4]);
 
 function getRandomConcepts(arr) {
@@ -42,11 +72,11 @@ function getRandomConcepts(arr) {
 }
 
 function onClickButton() {
-
-    var moviesarr = getRandomConcepts(movies);
-    textField1.innerHTML = "<p>"+moviesarr[0]+"</p>";
-    textField2.innerHTML = "<p>"+moviesarr[1]+"</p>";
-    textField3.innerHTML = "<p>"+moviesarr[2]+"</p>";
-
+    var conceptArr = getRandomConcepts(allConcepts);
+    textField1.innerHTML = "<p>"+conceptArr[0]+"</p>";
+    textField2.innerHTML = "<p>"+conceptArr[1]+"</p>";
+    textField3.innerHTML = "<p>"+conceptArr[2]+"</p>";
 
 }
+
+
